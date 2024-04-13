@@ -228,10 +228,10 @@ class GutterServices extends StatelessWidget {
 
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 10, left: 10),
-                child: Expanded(
-                  flex: 1,
+              Expanded(
+                flex: 1,
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 10, left: 10),
                   child: Row(
                     children: [
                       Image(

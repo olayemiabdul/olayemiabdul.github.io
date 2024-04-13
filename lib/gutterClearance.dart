@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:white_snow_garden/responsive/responsiveness.dart';
 import 'package:white_snow_garden/widget/appBarContainer.dart';
 import 'package:white_snow_garden/widget/bottom_widget.dart';
+import 'package:white_snow_garden/widget/carousel_contact_widget.dart';
 
 import 'package:white_snow_garden/widget/drawer.dart';
 import 'package:white_snow_garden/widget/gutter_services.dart';
@@ -83,7 +84,7 @@ class GutterClearancePage extends StatelessWidget {
     children:  [
     if (!Responsive.isMobile(context)) const AppbarContainer(),
 
-    //const CarouselContainer(),
+    const CarouselContainer(),
     const GutterServices(),
     const BottomWidget()
     ],
