@@ -10,16 +10,17 @@ class GutterServices extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDesktop = Responsive.isDesktop(context);
-    return SelectionArea(
-      child: Padding(
-        padding: const EdgeInsets.only(left: 10, right: 10),
-        child: Container(
-          height: 1200,
-          color: const Color(0xffD0DCDA),
-          child: Column(
-
-            children: [
-              Column(
+    return Padding(
+      padding: const EdgeInsets.only(left: 10, right: 10),
+      child: Container(
+        height: isDesktop?1350:1800,
+        width: MediaQuery.of(context).size.width,
+        color: const Color(0xffD0DCDA),
+        child: Column(
+    
+          children: [
+            SelectionArea(
+              child: Column(
                 children: [
                   const Padding(
                     padding: EdgeInsets.all(8.0),
@@ -68,7 +69,7 @@ class GutterServices extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       'We offer additional services such as gutter repair, gutter guard installation to prevent debris buildup, and gutter replacement if necessary. Hiring a professional gutter clearance service can help ensure that your gutter system remains in good condition and effectively protects your property from water damage.',
-
+                  
                       style: GoogleFonts.aladin(
                         textStyle: const TextStyle(
                           //color: Color(0xff6BAE6D),
@@ -221,86 +222,89 @@ class GutterServices extends StatelessWidget {
                                 ),
                               )),
                         ),
-
+                  
                       ],
                     ),
                   ),
-
+                  
                 ],
               ),
-              Image(
-
-                image:  const AssetImage('assets/images/gutter.jpg' ),
-                height:isDesktop? 350:150,
-                width: isDesktop? 1100:350,
-                fit: BoxFit.cover,
-              ),
-
-              Text('choosing our landscaping and gardening services means partnering with a trusted team of professionals dedicated to delivering outstanding results and exceptional customer experiences.',
+            ),
+            Image(
+    
+              image:  const AssetImage('assets/images/gutter.jpg' ),
+              height:isDesktop? 350:150,
+              width: isDesktop? 1100:350,
+              fit: BoxFit.cover,
+            ),
+    
+            SelectionArea(
+              child: Text(
+                'choosing our landscaping and gardening services means partnering with a trusted team of professionals dedicated to delivering outstanding results and exceptional customer experiences.',
                 style: GoogleFonts.roboto(
                     textStyle:const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 25,
-
+                  
                     )
                 ),),
-              const SizedBox(height: 20,),
-              InkWell(
-                onTap: () {},
-                child: Container(
-                  padding: const EdgeInsets.only(left: 3, top: 3),
-                  height: 50,
-                  width: 300,
-                  decoration: BoxDecoration(
-
-                    borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(10),
-                        topRight: Radius.circular(10),
-                        bottomLeft: Radius.circular(10),
-                        bottomRight: Radius.circular(10)),
-                    color: const Color(0xffD0DCDA),
-                    border: Border.all(
-                      color: Colors.green,
-                      width: 3.5,
-                    ),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 15),
-                        child: RichText(
-                          text: const TextSpan(
-                            text: 'Get',
-                            style: TextStyle(
-                                fontFamily: 'ConcertOne',
-                                color: Colors.white,
-                                fontSize: 30),
-                            children: <TextSpan>[
-                              TextSpan(
-                                text: ' Free Quote',
-                                style: TextStyle(
-                                    fontFamily: 'ConcertOne',
-                                    color: Colors.white,
-                                    fontSize: 30),
-                              ),
-                              TextSpan(
-                                text: ' Now',
-                                style: TextStyle(
-                                    fontFamily: 'ConcertOne',
-                                    color: Colors.white,
-                                    fontSize: 30),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Icon(Icons.arrow_forward_ios_rounded)
-                    ],
+            ),
+            const SizedBox(height: 20,),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                padding: const EdgeInsets.only(left: 3, top: 3),
+                height: 50,
+                width: 300,
+                decoration: BoxDecoration(
+    
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      topRight: Radius.circular(10),
+                      bottomLeft: Radius.circular(10),
+                      bottomRight: Radius.circular(10)),
+                  color: const Color(0xffD0DCDA),
+                  border: Border.all(
+                    color: Colors.green,
+                    width: 3.5,
                   ),
                 ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 15),
+                      child: RichText(
+                        text: const TextSpan(
+                          text: 'Get',
+                          style: TextStyle(
+                              fontFamily: 'ConcertOne',
+                              color: Colors.white,
+                              fontSize: 30),
+                          children: <TextSpan>[
+                            TextSpan(
+                              text: ' Free Quote',
+                              style: TextStyle(
+                                  fontFamily: 'ConcertOne',
+                                  color: Colors.white,
+                                  fontSize: 30),
+                            ),
+                            TextSpan(
+                              text: ' Now',
+                              style: TextStyle(
+                                  fontFamily: 'ConcertOne',
+                                  color: Colors.white,
+                                  fontSize: 30),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Icon(Icons.arrow_forward_ios_rounded)
+                  ],
+                ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
