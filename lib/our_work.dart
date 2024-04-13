@@ -77,9 +77,9 @@ class _OurWorkPageState extends State<OurWorkPage> {
 
         child: isDesktop ? const AppbarContainer(color: Colors.red,) : const DrawerWidget(),)
           : null,
-      body: LayoutBuilder(builder: (context, constraint) {
-        return Scaffold(
-          body: Container(
+      body:
+
+          Container(
             color: Colors.amber,
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
@@ -93,8 +93,8 @@ class _OurWorkPageState extends State<OurWorkPage> {
               ],
             ),
           ),
-        );
-      }),
+
+
     );
   }
 }
