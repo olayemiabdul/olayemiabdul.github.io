@@ -88,7 +88,7 @@ class _OurWorkPageState extends State<OurWorkPage> {
                 if (!Responsive.isMobile(context)) const AppbarContainer(),
 
                 const CarouselContainer(),
-                const LandScapeDesign(),
+                //const LandScapeDesign(),
                 const BottomWidget()
               ],
             ),
