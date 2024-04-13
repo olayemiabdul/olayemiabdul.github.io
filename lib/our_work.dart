@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:white_snow_garden/carousel.dart';
+
 import 'package:white_snow_garden/responsive/responsiveness.dart';
 import 'package:white_snow_garden/widget/appBarContainer.dart';
 import 'package:white_snow_garden/widget/bottom_widget.dart';
@@ -83,7 +83,7 @@ class _OurWorkPageState extends State<OurWorkPage> {
             color: Colors.amber,
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            child: ListView(
+            child: Column(
               children: [
                 if (!Responsive.isMobile(context)) const AppbarContainer(),
 
