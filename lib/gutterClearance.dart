@@ -1,4 +1,5 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:white_snow_garden/main.dart';
@@ -109,215 +110,217 @@ class GutterServices extends StatelessWidget {
         color: const Color(0xffD0DCDA),
         child: Column(
           children: [
-            SelectionArea(
-              child: Column(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Align(
-                      alignment: Alignment.topLeft,
+            Expanded(
+              child: SelectionArea(
+                child: Column(
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Align(
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          'Gutter Clearance',
+                          //style: GoogleFonts.libreBaskerville(),
+                          style: TextStyle(
+                            fontFamily: 'Roboto Bold',
+                            fontSize: 20,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomLeft,
                       child: Text(
-                        'Gutter Clearance',
-                        //style: GoogleFonts.libreBaskerville(),
-                        style: TextStyle(
-                          fontFamily: 'Roboto Bold',
-                          fontSize: 20,
-                          fontWeight: FontWeight.w900,
+                        'OUR SOLUTIONS FOR QUALITY GUTTER ClEANING',
+                        style: GoogleFonts.lateef(
+                          textStyle: const TextStyle(
+                              color: Color(0xff6BAE6D),
+                              letterSpacing: .5,
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
-                  ),
-                  Align(
-                    alignment: Alignment.bottomLeft,
-                    child: Text(
-                      'OUR SOLUTIONS FOR QUALITY GUTTER ClEANING',
-                      style: GoogleFonts.lateef(
-                        textStyle: const TextStyle(
-                            color: Color(0xff6BAE6D),
-                            letterSpacing: .5,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'regular gutter maintenance is essential for protecting your home from water damage which can  lead to roof damage and mould formation on the walls,'
+                            ' preserving its structural integrity, and maintaining a safe and healthy living environment. By investing in routine gutter cleaning and inspection, '
+                            'you can avoid costly repairs and ensure the long-term health and longevity of your home.',
+                        style: GoogleFonts.aladin(
+                          textStyle: const TextStyle(
+                            //color: Color(0xff6BAE6D),
+                              letterSpacing: .5,
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal),
+                        ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      'regular gutter maintenance is essential for protecting your home from water damage which can  lead to roof damage and mould formation on the walls,'
-                          ' preserving its structural integrity, and maintaining a safe and healthy living environment. By investing in routine gutter cleaning and inspection, '
-                          'you can avoid costly repairs and ensure the long-term health and longevity of your home.',
-                      style: GoogleFonts.aladin(
-                        textStyle: const TextStyle(
-                          //color: Color(0xff6BAE6D),
-                            letterSpacing: .5,
-                            fontSize: 14,
-                            fontWeight: FontWeight.normal),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'We offer additional services such as gutter repair, gutter guard installation to prevent debris buildup, and gutter replacement if necessary. Hiring a professional gutter clearance service can help ensure that your gutter system remains in good condition and effectively protects your property from water damage.',
+              
+                        style: GoogleFonts.aladin(
+                          textStyle: const TextStyle(
+                            //color: Color(0xff6BAE6D),
+                              letterSpacing: .5,
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal),
+                        ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      'We offer additional services such as gutter repair, gutter guard installation to prevent debris buildup, and gutter replacement if necessary. Hiring a professional gutter clearance service can help ensure that your gutter system remains in good condition and effectively protects your property from water damage.',
-
-                      style: GoogleFonts.aladin(
-                        textStyle: const TextStyle(
-                          //color: Color(0xff6BAE6D),
-                            letterSpacing: .5,
-                            fontSize: 14,
-                            fontWeight: FontWeight.normal),
+                    ListTile(
+                      title: const Text('We Offer the following Gutter Services:'),
+                      subtitle: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              bottom: 8,
+                              top: 8,
+                            ),
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Text(
+                                  '✅ Gutter Cleaning: We will remove all debris, leaves, and blockages to ensure proper water flow..',
+                                  style: GoogleFonts.aladin(
+                                    textStyle: const TextStyle(
+                                      //color: Color(0xff6BAE6D),
+                                        letterSpacing: .5,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                )),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              bottom: 8,
+                              top: 8,
+                            ),
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Text(
+                                  '✅ Gutter Repair: From leaks to loose gutters, we will restore your gutter system to optimal conditio',
+                                  style: GoogleFonts.aladin(
+                                    textStyle: const TextStyle(
+                                      //color: Color(0xff6BAE6D),
+                                        letterSpacing: .5,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                )),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              bottom: 8,
+                              top: 8,
+                            ),
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Text(
+                                  '✅ Gutter Installation: Need a new gutter system? We have got you covered with expert installation services.',
+                                  style: GoogleFonts.aladin(
+                                    textStyle: const TextStyle(
+                                      //color: Color(0xff6BAE6D),
+                                        letterSpacing: .5,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                )),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              bottom: 8,
+                              top: 8,
+                            ),
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Text(
+                                  '✅ Gutter Maintenance: Regular maintenance keeps your gutters functioning smoothly and prevents future issues.',
+                                  style: GoogleFonts.aladin(
+                                    textStyle: const TextStyle(
+                                      //color: Color(0xff6BAE6D),
+                                        letterSpacing: .5,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                )),
+                          ),
+                        ],
+                      ),
+                    ), ListTile(
+                      title: const Text('Why Choose Us:'),
+                      subtitle: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              bottom: 8,
+                              top: 8,
+                            ),
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Text(
+                                  '🌟 Expertise: Our team has the experience and know-how to handle all your gutter needs.',
+                                  style: GoogleFonts.aladin(
+                                    textStyle: const TextStyle(
+                                      //color: Color(0xff6BAE6D),
+                                        letterSpacing: .5,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                )),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              bottom: 8,
+                              top: 8,
+                            ),
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Text(
+                                  '🌟 Reliability: Count on us for timely service and quality workmanship.',
+                                  style: GoogleFonts.aladin(
+                                    textStyle: const TextStyle(
+                                      //color: Color(0xff6BAE6D),
+                                        letterSpacing: .5,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                )),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              bottom: 8,
+                              top: 8,
+                            ),
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Text(
+                                  '🌟 Affordability: We offer competitive pricing without sacrificing quality.',
+                                  style: GoogleFonts.aladin(
+                                    textStyle: const TextStyle(
+                                      //color: Color(0xff6BAE6D),
+                                        letterSpacing: .5,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                )),
+                          ),
+              
+                        ],
                       ),
                     ),
-                  ),
-                  ListTile(
-                    title: const Text('We Offer the following Gutter Services:'),
-                    subtitle: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 16,
-                            bottom: 8,
-                            top: 8,
-                          ),
-                          child: Align(
-                              alignment: Alignment.bottomLeft,
-                              child: Text(
-                                '✅ Gutter Cleaning: We will remove all debris, leaves, and blockages to ensure proper water flow..',
-                                style: GoogleFonts.aladin(
-                                  textStyle: const TextStyle(
-                                    //color: Color(0xff6BAE6D),
-                                      letterSpacing: .5,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
-                                ),
-                              )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 16,
-                            bottom: 8,
-                            top: 8,
-                          ),
-                          child: Align(
-                              alignment: Alignment.bottomLeft,
-                              child: Text(
-                                '✅ Gutter Repair: From leaks to loose gutters, we will restore your gutter system to optimal conditio',
-                                style: GoogleFonts.aladin(
-                                  textStyle: const TextStyle(
-                                    //color: Color(0xff6BAE6D),
-                                      letterSpacing: .5,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
-                                ),
-                              )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 16,
-                            bottom: 8,
-                            top: 8,
-                          ),
-                          child: Align(
-                              alignment: Alignment.bottomLeft,
-                              child: Text(
-                                '✅ Gutter Installation: Need a new gutter system? We have got you covered with expert installation services.',
-                                style: GoogleFonts.aladin(
-                                  textStyle: const TextStyle(
-                                    //color: Color(0xff6BAE6D),
-                                      letterSpacing: .5,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
-                                ),
-                              )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 16,
-                            bottom: 8,
-                            top: 8,
-                          ),
-                          child: Align(
-                              alignment: Alignment.bottomLeft,
-                              child: Text(
-                                '✅ Gutter Maintenance: Regular maintenance keeps your gutters functioning smoothly and prevents future issues.',
-                                style: GoogleFonts.aladin(
-                                  textStyle: const TextStyle(
-                                    //color: Color(0xff6BAE6D),
-                                      letterSpacing: .5,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
-                                ),
-                              )),
-                        ),
-                      ],
-                    ),
-                  ), ListTile(
-                    title: const Text('Why Choose Us:'),
-                    subtitle: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 16,
-                            bottom: 8,
-                            top: 8,
-                          ),
-                          child: Align(
-                              alignment: Alignment.bottomLeft,
-                              child: Text(
-                                '🌟 Expertise: Our team has the experience and know-how to handle all your gutter needs.',
-                                style: GoogleFonts.aladin(
-                                  textStyle: const TextStyle(
-                                    //color: Color(0xff6BAE6D),
-                                      letterSpacing: .5,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
-                                ),
-                              )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 16,
-                            bottom: 8,
-                            top: 8,
-                          ),
-                          child: Align(
-                              alignment: Alignment.bottomLeft,
-                              child: Text(
-                                '🌟 Reliability: Count on us for timely service and quality workmanship.',
-                                style: GoogleFonts.aladin(
-                                  textStyle: const TextStyle(
-                                    //color: Color(0xff6BAE6D),
-                                      letterSpacing: .5,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
-                                ),
-                              )),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 16,
-                            bottom: 8,
-                            top: 8,
-                          ),
-                          child: Align(
-                              alignment: Alignment.bottomLeft,
-                              child: Text(
-                                '🌟 Affordability: We offer competitive pricing without sacrificing quality.',
-                                style: GoogleFonts.aladin(
-                                  textStyle: const TextStyle(
-                                    //color: Color(0xff6BAE6D),
-                                      letterSpacing: .5,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
-                                ),
-                              )),
-                        ),
-
-                      ],
-                    ),
-                  ),
-
-                ],
+              
+                  ],
+                ),
               ),
             ),
              Padding(
