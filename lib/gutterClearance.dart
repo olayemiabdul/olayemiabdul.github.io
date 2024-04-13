@@ -78,8 +78,10 @@ class GutterClearancePage extends StatelessWidget {
 
         builder: (context, constraints) {
   return
-  SizedBox(
-  height: MediaQuery.of(context).size.height,
+  Container(
+    height: MediaQuery.of(context).size.height,
+    width: MediaQuery.of(context).size.width,
+    color: Colors.white,
     child: ListView(
     children:  [
     if (!Responsive.isMobile(context)) const AppbarContainer(),
