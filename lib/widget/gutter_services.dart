@@ -228,15 +228,12 @@ class GutterServices extends StatelessWidget {
 
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 10, left: 10),
-                child:     Image(
+              Image(
 
-                  image:  const AssetImage('assets/images/a.jpg' ),
-                  height:isDesktop? 350:150,
-                  width: isDesktop? 1100:350,
-                  fit: BoxFit.cover,
-                ),
+                image:  const AssetImage('assets/images/gutter.jpg' ),
+                height:isDesktop? 350:150,
+                width: isDesktop? 1100:350,
+                fit: BoxFit.cover,
               ),
 
               Text('choosing our landscaping and gardening services means partnering with a trusted team of professionals dedicated to delivering outstanding results and exceptional customer experiences.',
