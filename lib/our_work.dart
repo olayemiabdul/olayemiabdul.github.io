@@ -88,7 +88,7 @@ class _OurWorkPageState extends State<OurWorkPage> {
                 if (!Responsive.isMobile(context)) const AppbarContainer(),
 
                 const CarouselContainer(),
-                //const LandScapeDesign(),
+                const LandScapeDesign(),
                 const BottomWidget()
               ],
             ),
@@ -415,102 +415,96 @@ class LandScapeDesign extends StatelessWidget {
                 ),
               ),
                Padding(
-                padding: const EdgeInsets.only(bottom: 10, left: 10),
-                child: Expanded(
-                  flex: 4,
-                  child:isDesktop? Row(
-                    children: [
+                 padding: const EdgeInsets.only(bottom: 10, left: 10),
+                 child:isDesktop? Row(
+                  children: [
+                    Image(
+
+                      image: const AssetImage('assets/images/a.jpg' ),
+                      height:isDesktop? 350:150,
+                      width: isDesktop? 390:190,
+                      fit: BoxFit.cover,
+                    ),
+                    const SizedBox(width: 10,),
+                    Image(
+                      image: const AssetImage('assets/images/b.jpg'),
+                      height:isDesktop? 350:150,
+                      width: isDesktop? 390:190,
+                      fit: BoxFit.cover,
+                    ),
+                    const SizedBox(width: 10,),
+                     Image(
+                      image: const AssetImage('assets/images/c.jpg'),
+                      height:isDesktop? 350:150,
+                      width: 390,
+                      fit: BoxFit.cover,
+                    ),
+                    const SizedBox(width: 10,),
+
+
+
+                  ],
+                ):Column(
+                  children: [
+                    const Row(children: [
                       Image(
 
-                        image: const AssetImage('assets/images/a.jpg' ),
-                        height:isDesktop? 350:150,
-                        width: isDesktop? 390:190,
+                        image: AssetImage('assets/images/a.jpg' ),
+                        height:150,
+                        width: 225,
                         fit: BoxFit.cover,
                       ),
-                      const SizedBox(width: 10,),
+                      SizedBox(width: 10,),
                       Image(
-                        image: const AssetImage('assets/images/b.jpg'),
-                        height:isDesktop? 350:150,
-                        width: isDesktop? 390:190,
+                        image: AssetImage('assets/images/b.jpg'),
+                        height:150,
+                        width: 225,
                         fit: BoxFit.cover,
                       ),
-                      const SizedBox(width: 10,),
-                       Image(
-                        image: const AssetImage('assets/images/c.jpg'),
-                        height:isDesktop? 350:150,
-                        width: 390,
-                        fit: BoxFit.cover,
-                      ),
-                      const SizedBox(width: 10,),
+                      SizedBox(width: 10,),
 
 
 
-                    ],
-                  ):Column(
-                    children: [
-                      const Row(children: [
-                        Image(
+                    ],),
 
-                          image: AssetImage('assets/images/a.jpg' ),
-                          height:150,
-                          width: 225,
-                          fit: BoxFit.cover,
-                        ),
-                        SizedBox(width: 10,),
-                        Image(
-                          image: AssetImage('assets/images/b.jpg'),
-                          height:150,
-                          width: 225,
-                          fit: BoxFit.cover,
-                        ),
-                        SizedBox(width: 10,),
-
-
-
-                      ],),
-
-                       Image(
-                        image: const AssetImage('assets/images/c.jpg'),
-                        height: 350,
-                        width: MediaQuery.of(context).size.width,
-                        fit: BoxFit.cover,
-                      ),
-                    ],
-                  ),
+                     Image(
+                      image: const AssetImage('assets/images/c.jpg'),
+                      height: 350,
+                      width: MediaQuery.of(context).size.width,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
                 ),
-              ),
+               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 10, left: 10),
-                child: Expanded(
-                  flex: 4,
-                  child:Row(
+                child:Row(
 
-                    children: [
-                      Image(
+                  children: [
+                    Image(
 
-                        image: const AssetImage('assets/images/e.jpg' ),
-                        height: 150,
-                        width:  isDesktop? 390:145,
-                        fit: BoxFit.cover,
-                      ),
-                      const SizedBox(width: 10,),
-                      Image(
-                        image: const AssetImage('assets/images/f.jpg'),
-                        height: 150,
-                        width:  isDesktop? 390:145,
-                        fit: BoxFit.cover,
-                      ),
-                      const SizedBox(width: 10,),
-                      Image(
-                        image: const AssetImage('assets/images/g.jpg'),
-                        height: 150,
-                        width:  isDesktop? 390:145,
-                        fit: BoxFit.cover,
-                      ),
-                      const SizedBox(width: 10,),
+                      image: const AssetImage('assets/images/e.jpg' ),
+                      height: 150,
+                      width:  isDesktop? 390:145,
+                      fit: BoxFit.cover,
+                    ),
+                    const SizedBox(width: 10,),
+                    Image(
+                      image: const AssetImage('assets/images/f.jpg'),
+                      height: 150,
+                      width:  isDesktop? 390:145,
+                      fit: BoxFit.cover,
+                    ),
+                    const SizedBox(width: 10,),
+                    Image(
+                      image: const AssetImage('assets/images/g.jpg'),
+                      height: 150,
+                      width:  isDesktop? 390:145,
+                      fit: BoxFit.cover,
+                    ),
+                    const SizedBox(width: 10,),
 
-                    ],
-                  ),
+                  ],
                 ),
               ),
               SelectionArea(

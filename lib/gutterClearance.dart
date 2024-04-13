@@ -323,18 +323,21 @@ class GutterServices extends StatelessWidget {
               ),
                Padding(
                 padding: const EdgeInsets.only(bottom: 10, left: 10),
-                child: Row(
-                  children: [
-                    Image(
+                child: Expanded(
+                  flex: 1,
+                  child: Row(
+                    children: [
+                      Image(
 
-                      image:  const AssetImage('assets/images/gutter.jpg' ),
-                      height:isDesktop? 350:150,
-                      width: isDesktop? 1100:350,
-                      fit: BoxFit.cover,
-                    ),
-                    const SizedBox(width: 10,),
+                        image:  const AssetImage('assets/images/gutter.jpg' ),
+                        height:isDesktop? 350:150,
+                        width: isDesktop? 1100:350,
+                        fit: BoxFit.cover,
+                      ),
+                      const SizedBox(width: 10,),
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
       
