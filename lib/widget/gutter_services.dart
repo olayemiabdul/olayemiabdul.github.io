@@ -235,7 +235,7 @@ class GutterServices extends StatelessWidget {
                     Image(
 
                       image:  const AssetImage('assets/images/gutter.jpg' ),
-                      height:isDesktop? 350:150,
+                      height:isDesktop? 350:160,
                       width: isDesktop? 1100:350,
                       fit: BoxFit.cover,
                     ),
